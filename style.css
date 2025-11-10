@@ -5,12 +5,8 @@
 }
 
 body {
-  /* font-family: sans-serif;
-  background: linear-gradient(135deg, #0c1821 0%, #1a2f3d 50%, #2d4a5c 100%);
-  color: #ffffff; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 50%, #c5dfe8 100%);
-  /* Ya solid white: background: #ffffff; */
   color: #1a2f3d;
   display: flex;
   flex-direction: column;
@@ -27,15 +23,11 @@ body.has-content {
 .container {
   margin: 50px auto;
   text-align: center;
-  /* background: linear-gradient(135deg, #0c1821 0%, #1a2f3d 50%, #2d4a5c 100%); */
   min-height: 450px;
   width: 50%;
   height: auto;
   border-radius: 20px;
-  /* border: 2px solid #3d6273;
-  box-shadow: 0 15px 50px rgba(28, 74, 92, 0.6); */
   background: linear-gradient(135deg, #ffffff 0%, #f8fbfd 50%, #f0f7fa 100%);
-  /* Ya plain white: background: #ffffff; */
   border: 2px solid #b8d4e0;
   box-shadow: 0 15px 50px rgba(74, 144, 164, 0.2);
   transition: all 0.5s ease-in-out;
@@ -101,7 +93,6 @@ img {
   transform: translateY(-3px);
   outline: none;
   border: 2px solid #5aa3b8;
-  /* box-shadow: 4px 4px 13px rgba(74, 144, 164, 0.5); */
   box-shadow: 2px 2px 20px rgba(74, 144, 164, 0.4);
 }
 
@@ -205,7 +196,6 @@ button:hover {
   width: 100%;
   border: 2px solid #077c9e;
   border-radius: 8px;
-  /* margin: 0px 50px; */
   padding: 5px;
   transition: all 0.4s ease;
 }
@@ -254,9 +244,7 @@ button:hover {
   transform: translateY(-3px);
   box-shadow: 4px 4px 20px #9dc4d0;
 }
-/* Media Query for Mobile - 360px and below */
-/* Media Query for 360px - BEST VERSION */
-/* Media Query for 360px - PROFESSIONAL VERSION */
+
 @media (max-width: 360px) {
   body {
     padding: 10px;
@@ -289,7 +277,6 @@ button:hover {
     line-height: 1.4;
   }
 
-  /* Input aur Button - Professional Width */
   .container .cityInput {
     position: static;
     width: 90%;
@@ -366,7 +353,6 @@ button:hover {
     font-weight: 800;
   }
 
-  /* Error Message */
   .result.error-message {
     width: 100%;
     max-width: 100%;
@@ -375,7 +361,6 @@ button:hover {
   }
 }
 
-/* iPhone SE aur chhote screens ke liye (320px) */
 @media (max-width: 320px) {
   .container h1 {
     font-size: 24px;
@@ -407,3 +392,4 @@ button:hover {
     font-size: 16px;
   }
 }
+
