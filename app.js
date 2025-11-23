@@ -8,19 +8,17 @@ async function getFacts() {
   let cityName = cityInput.value.toLowerCase().trim();
   if (cityName === "") {
     result.innerHTML = " ⚠️ Please enter a city!";
-    result.classList.add("show", "error-message")
-    result.classList.remove("loading")
-    container.classList.remove("expanded")
-    document.body.classList.remove("has-content")
+    result.classList.add("show", "error-message");
+    result.classList.remove("loading");
+    container.classList.remove("expanded");
+    document.body.classList.remove("has-content");
     return;
-
   }
 
-  result.classList.add("show", "loading")
-  result.innerHTML = "loading"
+  result.classList.add("show", "loading");
+  result.innerHTML = "loading";
 
-
-  let today = new Date().toISOString().split('T')[0];
+  let today = new Date().toISOString().split("T")[0];
   let URL = `https://api.aladhan.com/v1/timingsByAddress/${today}?address=${cityName}&method=8`;
   let response = await fetch(URL);
   console.log(response);
@@ -34,13 +32,12 @@ async function getFacts() {
      <div class = "firsth2"><h2>☀️ Dhuhr </h2> <span>${data.data.timings.Dhuhr}</span></div>
      <div class = "firsth2"><h2>🌤️ Asr </h2> <span>${data.data.timings.Asr}</span></div>
      <div class = "firsth2"><h2>🌅 Maghrib </h2> <span>${data.data.timings.Maghrib}</span></div>
-     <div class = "firsth2"><h2>✨ Isha </h2> <span>${data.data.timings.Isha}</span></div>`
-    result.classList.add("show")
-    result.classList.remove("loading")
-    result.classList.add("full-content")
-    container.classList.add("expanded")
-    document.body.classList.add("has-content")
+     <div class = "firsth2"><h2>✨ Isha </h2> <span>${data.data.timings.Isha}</span></div>`;
+    result.classList.add("show");
+    result.classList.remove("loading");
+    result.classList.add("full-content");
+    container.classList.add("expanded");
+    document.body.classList.add("has-content");
   }
-
 }
 btn.addEventListener("click", getFacts);
